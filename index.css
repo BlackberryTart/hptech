@@ -1,6 +1,11 @@
+html
+{
+	height: 100%;
+}
+
 #heck
 {
-	width: 100%
+	width: 166%
 	height: 100%;
 	margin: auto;
 }
@@ -18,9 +23,21 @@ nav
 {
 	width: 100%;
 	text-align: center;
-	background-color: #F0C0E0;
-	border: 1px solid black;
 	margin: all;
+}
+
+tr.neato, td.neato
+{
+	border: 2px dashed #E8A8C8;
+	border-radius: 3px;
+	width: 33%;
+	background-color: #F0C0E0;
+}
+
+#active
+{
+	border: 2px dashed #08AAB8 !important;
+	background-color: #AACCEE !important;
 }
 
 body
@@ -28,6 +45,7 @@ body
 	margin:auto;
 	background-color: #F0C000;
 	font-family: Georgia;
+	height: 100%;
 }
 
 div.body
@@ -36,6 +54,7 @@ div.body
 	margin: auto;
 	background-color: #A0F0C0;
 	padding: 2%;
+	min-height: 100%;
 }
 
 #head
@@ -74,4 +93,16 @@ div.table
 	border: 2px dashed orange;
 	padding: 5px;
 	margin: auto;
+	width: 25%;
+	height: 25%;
+	border-radius: 10px;
+}
+
+.center
+{
+	margin: auto;
+	width: 50%;
+	height:50%;
+	display: block;
+	border: 1px dotted black;
 }
