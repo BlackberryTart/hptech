@@ -1,3 +1,12 @@
+@keyframes colors
+{
+	0%  {background-color: red;}
+	25% {background-color: yellow;}
+	50% {background-color: green;}
+	75% {background-color: cyan;}
+	100%{background-color: blue;}
+}
+
 html
 {
 	height: 100%;
@@ -46,6 +55,7 @@ body
 	background-color: #F0C000;
 	font-family: Georgia;
 	height: 100%;
+	animation: colors 10s linear 0s infinite alternate;
 }
 
 div.body
@@ -109,4 +119,9 @@ div.table
 p
 {
 	text-indent: 3% !important;
+}
+
+#pad
+{
+	padding: 2%;
 }
