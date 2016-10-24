@@ -1,10 +1,13 @@
-@keyframes colors
+@keyframes backcolors
 {
-	0%  {background-color: red;}
-	25% {background-color: yellow;}
-	50% {background-color: green;}
-	75% {background-color: cyan;}
-	100%{background-color: blue;}
+	0%  {background-color: #E0D000;}
+	100%{background-color: #08B800;}
+}
+
+@keyframes textcolor
+{
+	0%  {color: darkgreen;}
+	100%{color: darkblue;}
 }
 
 html
@@ -17,6 +20,23 @@ html
 	width: 166%
 	height: 100%;
 	margin: auto;
+}
+
+a.extant:link, a.extant:visited
+{
+	font-weight: bold;
+	color: blue;
+	text-decoration: none;
+}
+
+#woo
+{
+	color: red;
+}
+
+a.extant:hover
+{
+	animation: textcolor 1s linear 0s infinite alternate;
 }
 
 nav
@@ -37,10 +57,10 @@ nav
 
 tr.neato, td.neato
 {
-	border: 2px dashed #E8A8C8;
+	border: 2px dashed darkgreen;
 	border-radius: 3px;
-	width: 33%;
-	background-color: #F0C0E0;
+	width: 25%;
+	background-color: #C0E0C0;
 }
 
 #active
@@ -55,7 +75,7 @@ body
 	background-color: #F0C000;
 	font-family: Georgia;
 	height: 100%;
-	animation: colors 10s linear 0s infinite alternate;
+	animation: backcolors 5s linear 0s infinite alternate;
 }
 
 div.body
@@ -124,4 +144,9 @@ p
 #pad
 {
 	padding: 2%;
+}
+
+div.license object
+{
+	width: 100%;
 }
