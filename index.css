@@ -1,15 +1,3 @@
-@keyframes backcolors
-{
-	0%  {background-color: #E0D000;}
-	100%{background-color: #08B800;}
-}
-
-@keyframes textcolor
-{
-	0%  {color: darkgreen;}
-	100%{color: darkblue;}
-}
-
 html
 {
 	height: 100%;
@@ -25,18 +13,18 @@ html
 a.extant:link, a.extant:visited
 {
 	font-weight: bold;
-	color: blue;
+	color: #45617E;
 	text-decoration: none;
 }
 
 #woo
 {
-	color: red;
+	color: #062A4F;
 }
 
 a.extant:hover
 {
-	animation: textcolor 1s linear 0s infinite alternate;
+	color: #15395F;
 }
 
 nav
@@ -57,32 +45,36 @@ nav
 
 tr.neato, td.neato
 {
-	border: 2px dashed darkgreen;
+	border: 2px solid #005E0C;
 	border-radius: 3px;
-	width: 25%;
-	background-color: #C0E0C0;
+	width: 20%;
+	background-color: #ADBC5F;
+}
+
+td.neato:hover
+{
+	background-color: #C9D390 !important;	
 }
 
 #active
 {
-	border: 2px dashed #08AAB8 !important;
-	background-color: #AACCEE !important;
+	border: 2px solid #2B4C6F !important;
+	background-color: #74A97A !important;
 }
 
 body
 {
 	margin:auto;
-	background-color: #F0C000;
+	background-color: #93A537;
 	font-family: Georgia;
 	height: 100%;
-	animation: backcolors 5s linear 0s infinite alternate;
 }
 
 div.body
 {
 	width: 66%;
 	margin: auto;
-	background-color: #A0F0C0;
+	background-color: #74A97A;
 	padding: 2%;
 	min-height: 100%;
 }
@@ -90,6 +82,7 @@ div.body
 #head
 {
 	text-align: center;
+	margin: auto;
 }
 
 .intro
@@ -149,4 +142,16 @@ p
 div.license object
 {
 	width: 100%;
+}
+
+.colorset, .colorset th, .colorset td
+{
+	border: 2px solid black;
+	margin: auto;
+}
+
+div.test
+{
+	width: 50px;
+	height: 50px;
 }
