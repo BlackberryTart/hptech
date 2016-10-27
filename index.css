@@ -3,28 +3,22 @@ html
 	height: 100%;
 }
 
-#heck
+body
 {
-	width: 166%
+	background-color: #2B4C6F;
+	font-family: Georgia;
 	height: 100%;
+	margin: 0px;	
+}
+
+div.main
+{
+	width: 66%;
 	margin: auto;
-}
-
-a.extant:link, a.extant:visited
-{
-	font-weight: bold;
-	color: #45617E;
-	text-decoration: none;
-}
-
-#woo
-{
-	color: #062A4F;
-}
-
-a.extant:hover
-{
-	color: #15395F;
+	background-color: #005E0C;
+	padding: 2%;
+	min-height: 100%;
+	color: #C9D390;
 }
 
 nav
@@ -34,124 +28,147 @@ nav
 	font-family: sans-serif;
 	width: 100%;
 	margin: auto;
+	left: 0px;
 }
 
-#official
+footer
 {
+	bottom: 0;
+	font-family: sans-serif;
 	width: 100%;
-	text-align: center;
-	margin: all;
+	margin: auto;
+	left: 0px;
 }
 
-tr.neato, td.neato
+.nav, .foot
+{
+	border: 1px solid black;
+	background-color: black;
+	width: 100%;
+}
+
+.nav td, .foot td
 {
 	border: 2px solid #005E0C;
 	border-radius: 3px;
-	width: 20%;
 	background-color: #ADBC5F;
+	text-align: center;
+	width: 25%;
 }
 
-td.neato:hover
+.nav * :hover, .foot * :hover
 {
 	background-color: #C9D390 !important;	
 }
 
-#active
+.nav * a, .foot * a
+{
+	font-weight: bold;
+	color: #45617E;
+	text-decoration: none;
+}
+
+.nav * a:hover, .foot * a:hover
+{
+	color: #15395F;
+}
+
+.active, .active:hover
 {
 	border: 2px solid #2B4C6F !important;
 	background-color: #74A97A !important;
 }
 
-body
+.active a, .active a:hover
 {
-	margin:auto;
-	background-color: #93A537;
-	font-family: Georgia;
-	height: 100%;
-}
-
-div.body
-{
-	width: 66%;
-	margin: auto;
-	background-color: #74A97A;
-	padding: 2%;
-	min-height: 100%;
-}
-
-#head
-{
-	text-align: center;
-	margin: auto;
-}
-
-.intro
-{
-	font-size: 150%;
-	font-weight: bold;
-}
-
-div.table
-{
-	align-items: center;
-	text-align: center;
-	padding:3px;
-}
-
-.legit
-{
-	font-family: Georgia;
-	padding: 5px;
-	width: 66%;
-}
-
-.Cool
-{
-	text-align: center;
-	font-family: 'Geo';
-	font-size: 150%;
-	color: red;
-	background-color: pink;
-	border: 2px dashed orange;
-	padding: 5px;
-	margin: auto;
-	width: 25%;
-	height: 25%;
-	border-radius: 10px;
+	color: #062A4F;
+	background-color: #74A97A !important;
 }
 
 .center
 {
 	margin: auto;
-	width: 50%;
-	height:50%;
+	text-align: center;
+	padding: 2px;
 	display: block;
-	border: 1px dotted black;
+}
+
+img.center
+{
+	padding: 1%;
+	width: 50%;
+	height: 50%;
+}
+
+#title
+{
+	font-weight: bold;
+	font-size: 35px;
+}
+
+#sub
+{
+	font-weight: bold;
+	font-size: 20px;
+	padding: 5px;
 }
 
 p
 {
-	text-indent: 3% !important;
+	text-indent: 3%
 }
 
-#pad
+#intro
 {
-	padding: 2%;
+	font-size: 150%;
+	font-weight: bold;
 }
 
-div.license object
+#testtablediv
+{
+	align-items: center;
+	text-align: center;
+	padding:3px;
+	margin: auto;
+}
+
+table.cool th
 {
 	width: 100%;
 }
 
-.colorset, .colorset th, .colorset td
+table.cool, table.cool * 
+{
+	text-align: center;
+	font-family: 'Segoe Print', 'Trebuchet MS';
+	color: red;
+	background-color: pink;
+	border: 2px dashed black;
+	padding: 5px;
+	margin: auto;
+	border-radius: 10px;
+}
+
+object
+{
+	width: 100%;
+	height: 5%;
+	padding: 1%;
+}
+
+table.colorset
+{
+	padding: 1%;
+}
+
+.colorset * , .colorset
 {
 	border: 2px solid black;
 	margin: auto;
 }
 
-div.test
+.colorset * div
 {
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
 }
