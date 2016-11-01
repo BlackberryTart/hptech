@@ -66,6 +66,9 @@ footer
 	font-weight: bold;
 	color: #45617E;
 	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 .nav * a:hover, .foot * a:hover
@@ -149,11 +152,11 @@ table.cool, table.cool *
 	border-radius: 10px;
 }
 
-object
+pre
 {
 	width: 100%;
-	height: 5%;
 	padding: 1%;
+	font-size: 120%;
 }
 
 table.colorset
@@ -171,4 +174,10 @@ table.colorset
 {
 	width: 60px;
 	height: 60px;
+}
+
+::selection
+{
+	color: #74A97A;
+	background-color: #062A4F;
 }
