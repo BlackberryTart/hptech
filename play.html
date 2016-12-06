@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="play.css">
+
+</head>
+<body>
+
+	<audio id="music" preload="auto" controls>
+  		<source src="3230059426.mp3">
+	</audio>
+	<div id="audioplayer" onload="times()">
+		<button id="pButton" class="play" onclick="play()"></button>
+		<div id="timeline">    
+  			<div id="playhead"></div>
+  		</div>
+  		<button id="volup" onclick="volUp()"></button>
+  		<button id="voldown" onclick="volDown()"></button>
+  		<div id="time"></div>
+  		<div id="total"></div>
+	</div> 
+		<script type="text/javascript" src="player.js"></script>
+</body>
+</html>

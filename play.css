@@ -1,0 +1,42 @@
+#audioplayer
+{
+	margin: auto;
+	background-color: white;
+	width: 70%;
+	height: 60px;
+}
+
+#timeline
+{
+	width: 70%;
+	height: 14px;
+	float: left;
+	margin-top: 23px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,.3);
+}
+
+#playhead
+{
+	width: 14px;
+	height: 14px;
+	background-color: rgba(0,0,0,.7);
+	border-radius: 50%;
+}
+
+#pButton, #volup, #voldown{
+	height:60px; 
+    width: 60px;
+    border: none;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:left;
+    outline:none;
+}
+
+#volup{background: url(vup.png);}
+#voldown{background: url(vdown.png);}
+
+.play{background: url('play.png') ;}
+.pause{background: url('pause.png') ;}
