@@ -10,6 +10,7 @@
 			<meta name=viewport content="width=device-width, initial-scale=1">
 			<link rel="stylesheet" type="text/css" href="index.css"/>
 			<link rel="stylesheet" type="text/css" href="Colors.css"/>
+			<link rel="stylesheet" type="text/css" href="play.css" />
 			<link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet"/>
 			<link rel="shortcut icon" href="misc/favicon.ico"/>
 		</head>
@@ -22,9 +23,9 @@
 				<nav>
 					<table class="nav">
 						<tr>
-							<td class="active"><a href="http://kmarx.hpcoders.com">Kevin's Homepage</a></td>
-							<td><a href="about.html">About Kevin</td>
-							<td><a href="colors.html">Color table</a></td>
+							<td class="active"><a href="http://kmarx.hpcoders.com"> Kevin's Homepage</a></td>
+							<td><a href="about.html"> About Kevin </td>
+							<td><a href="colors.html"> Color table </a></td>
 							<td><a href="crap.html">Kevin's Trash HTML</a></td>
 						</tr>
 					</table>
@@ -56,11 +57,23 @@
 					</table>
 				</div>
 				<img src="misc/potato.jpg" class="center" title="this is a Potato">
-				<audio controls class="center" title="Music to Potato To">
-					<source src="misc/3230059426.mp3" type="audio/mpeg">
-					This is dead.
-				</audio>
-			</div>
+				<div id="audio">
+					<audio id="music" preload="auto" controls hidden="hidden">
+						<source src="misc/3230059426.mp3">
+					</audio>
+					<div id="audioplayer" onload="times()" onclick="timeDisp()">
+						<button id="pButton" class="play" onclick="play()"></button>
+						<div id="timeline">    
+							<div id="playhead"></div>
+						</div>
+						<button id="volup" class="volup" onclick="volUp()"></button>
+						<button id="voldown" class="voldown" onclick="volDown()"></button>
+						</div> 
+						<div id="time">aaa</div>
+						<div id="remain">aaa</div>
+						<script type="text/javascript" src="player.js"></script>
+					</div>
+				</div>
 			<footer>
 				<table class="foot">
 					<tr>

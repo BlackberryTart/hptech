@@ -4,6 +4,7 @@
 	background-color: white;
 	width: 70%;
 	height: 60px;
+	border: 5px solid black;
 }
 
 #timeline
@@ -28,15 +29,15 @@
 	height:60px; 
     width: 60px;
     border: none;
-    background-size: 50% 50%;
-    background-repeat: no-repeat;
+    background-size: 75% 75%; 
+	background-repeat: no-repeat;
     background-position: center;
     float:left;
     outline:none;
 }
 
-#volup{background: url(vup.png);}
-#voldown{background: url(vdown.png);}
+.volup{background: url(misc/vup.png);}
+.voldown{background: url(misc/vdown.png);}
 
-.play{background: url('play.png') ;}
-.pause{background: url('pause.png') ;}
+.play{background: url('misc/play.png') ;}
+.pause{background: url('misc/pause.png') ;}
