@@ -61,7 +61,7 @@
 					<audio id="music" preload="auto" controls hidden="hidden">
 						<source src="misc/3230059426.mp3">
 					</audio>
-					<div id="audioplayer" onload="times()" onclick="timeDisp()">
+					<div id="audioplayer" onload="times(); timeDisp()">
 						<button id="pButton" class="play" onclick="play()"></button>
 						<div id="timeline">    
 							<div id="playhead"></div>
@@ -69,8 +69,8 @@
 						<button id="volup" class="volup" onclick="volUp()"></button>
 						<button id="voldown" class="voldown" onclick="volDown()"></button>
 						</div> 
-						<div id="time">aaa</div>
-						<div id="remain">aaa</div>
+						<div id="time">Total Time</div>
+						<div id="remain">Time Left</div>
 						<script type="text/javascript" src="player.js"></script>
 					</div>
 				</div>
